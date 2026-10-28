@@ -5,47 +5,35 @@ import HorizontalCard from "../components/HorizontalCard.astro";
 
 <BaseLayout title="Projects" sideBarActiveItemID="projects">
   <div>
-    <div class="text-3xl w-full font-bold mb-5">Projects Header</div>
+    <div class="text-3xl w-full font-bold mb-5">Completed Projects</div>
   </div>
 
   <HorizontalCard
     title="Web App: Feed This Much"
     img="/logo_feedthismuch_nontransparent.png"
-    desc="A group project where we created a React web app for dog and cat owners. The Feed This Much web app helps pet owners create personalized feeding plans tailored to their pets' specific needs based on scientific nutritional guidelines by the European Pet Food Industry Federation (FEDIAF).  It calculates the amount of food to give a pet, including a combination of two different foods, and can divide this over a custom number of meals."
-    url="https://teamrecurrent.wixsite.com/feed-this-much-expo"
-    badge="TOP"
+    desc="A group project where we created a React web app for dog and cat owners. The Feed This Much web app helps pet owners create personalized feeding plans tailored to their pets' specific needs based on scientific nutritional guidelines by the European Pet Food Industry Federation (FEDIAF).  It calculates the amount of food to give a pet, including a combination of two different foods, and can divide this over a custom number of meals. Key Tools/Languages/Frameworks: React, JavaScript, TypeScript, Python, SQL, CSS, Figma"
+    url="https://github.com/aliciavanzijl/feed-this-much"
+    badge="Web App"
   />
   <div class="divider my-0"></div>
   <HorizontalCard
     title="Swimmy Shark Game"
     img="/shark_game_short (1).gif"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    desc="A Platform Game for ChipKit uC32 and Basic I/O Shield. Key Tools/Languages/Frameworks: C."
     url="https://github.com/aliciavanzijl/swimmyshark"
+    badge="C"
   />
 
   <div>
-    <div class="text-3xl w-full font-bold mb-5 mt-10">Projects Header</div>
+    <div class="text-3xl w-full font-bold mb-5 mt-10">Works In Progress</div>
   </div>
 
   <HorizontalCard
-    title="Demo Project 3"
+    title="Qt C++ Simple Game"
     img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-    badge="FOSS"
+    desc="A very simple application made using C++ and Qt, as a learning exercise as I learn best by making things. A work in progress."
+    url="https://github.com/aliciavanzijl/Qt-Cplus-Simple-Game"
+    badge="C++"
   />
   <div class="divider my-0"></div>
-  <HorizontalCard
-    title="Demo Project 4"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-  />
-  <div class="divider my-0"></div>
-  <HorizontalCard
-    title="Demo Project 5"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-  />
 </BaseLayout>

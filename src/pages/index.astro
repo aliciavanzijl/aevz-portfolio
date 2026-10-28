@@ -5,7 +5,7 @@ import { getCollection } from "astro:content";
 import createSlug from "../lib/createSlug";
 
 const posts = (await getCollection("blog")).sort(
-  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
 );
 
 const last_posts = posts.slice(0, 3);
@@ -46,26 +46,19 @@ const last_posts = posts.slice(0, 3);
   </div>
 
   <HorizontalCard
-    title="Demo Project 1"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-    badge="NEW"
+    title="Web App: Feed This Much"
+    img="/logo_feedthismuch_nontransparent.png"
+    desc="A group project where we created a React web app for dog and cat owners. It helps pet owners create personalized feeding plans tailored to their pets' needs based on scientific nutritional guidelines.  It calculates the amount of food to give a pet, including a combination of two different foods, and can divide this over a custom number of meals. Key Tools/Languages/Frameworks: React, JavaScript, TypeScript, Python, SQL, CSS, Figma"
+    url="https://github.com/aliciavanzijl/feed-this-much"
+    badge="Web App"
   />
   <div class="divider my-0"></div>
   <HorizontalCard
-    title="Demo Project 2"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-  />
-  <div class="divider my-0"></div>
-  <HorizontalCard
-    title="Demo Project 3"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-    badge="FOSS"
+    title="Swimmy Shark Game"
+    img="/shark_game_short (1).gif"
+    desc="A Platform Game for ChipKit uC32 and Basic I/O Shield. Key Tools/Languages/Frameworks: C."
+    url="https://github.com/aliciavanzijl/swimmyshark"
+    badge="C"
   />
 
   <!--
